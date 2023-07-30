@@ -36,7 +36,6 @@ const run = async () => {
     powersupplyunitCollection = db.collection('powersupplyunit');
     storagedeviceCollection = db.collection('storagedevice');
     othersCollection = db.collection('others');
-   
 
     app.get('/product', async (req: Request, res: Response) => {
       const cursor = productCollection.find({});
